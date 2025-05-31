@@ -1,5 +1,16 @@
 🚀 Meteor Mash
 
+Dowload the game at https://corysparks.itch.io/meteor-mash
+
+📝 Download Instructions:
+
+    -Visit: https://corysparks.itch.io/meteor-mash
+    -Scroll down and click the Download button for your platform (Windows/macOS)
+    -Once downloaded, extract the ZIP file
+    -Open the folder and run the executable:
+        On Windows: MeteorMash.exe
+        On macOS: right-click > Open (first-time security bypass)
+
 Dodge. Catch. Survive.
 The alien menace is dropping fiery meteors and it’s your job to protect Earth with only three hovering platforms!
 
@@ -14,17 +25,12 @@ Whether it's bugs, balance, or ideas, I'd love to hear what you think!
 
 💥 Features:
 
-    Classic catch the falling object gameplay with a space age twist
-
-    Snappy controls using mouse to move, space bar to start
-
-    8 difficulty waves - higher waves = faster meteors and more points
-
-    Lose a platform when a meteor gets through
-
-    Earn platforms back with skill (1-up every 1000 points)
-
-    Juicy screen shake, squash & stretch animations, and retro effects
+    -Classic catch the falling object gameplay with a space age twist
+    -Snappy controls using mouse to move, space bar to start
+    -8 difficulty waves - higher waves = faster meteors and more points
+    -Lose a platform when a meteor gets through
+    -Earn platforms back with skill (1-up every 1000 points)
+    -Juicy screen shake, squash & stretch animations, and retro effects
 
 
 ![Meteor Mash Game 2](https://github.com/user-attachments/assets/1dff30fd-fe80-4c1c-9d56-64cb3f94944b)
