@@ -1,19 +1,32 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MusicManager : MonoBehaviour
 {
+    private static MusicManager instance;
     AudioSource music;
 
     void Awake()
     {
-        DontDestroyOnLoad(this);
-        music = this.GetComponent<AudioSource>();
+        if (instance == null)
+        {
+            instance = this;
+            music = this.GetComponent<AudioSource>();
+        }
+        else
+        {
+            Destroy(this.gameObject);
+            return;
+        }
+
+        DontDestroyOnLoad(this.gameObject);
+
     }
 
     void Start()
     {
-        music.Play();
+        if (!music.isPlaying)
+        {
+            music.Play();
+        }
     }
 }
