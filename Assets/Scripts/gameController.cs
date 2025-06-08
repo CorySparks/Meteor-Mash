@@ -19,6 +19,7 @@ public class gameController : MonoBehaviour
     public impactFlash impactFlashManager;
     private int lastLifeScoreCheckpoint = 0;
     private const int lifeScoreThreshold = 1000;
+    int nextLifeScoreCheckpoint = 1000;
     public ParticleSystem explosionParticles;
     private Color flashRed = new Color(0.89f, 0.43f, 0.40f);
     public Image spaceBar;
@@ -61,15 +62,14 @@ public class gameController : MonoBehaviour
         scoreTxt.text = score.ToString();
         GroupStats();
 
-        if (score - lastLifeScoreCheckpoint >= lifeScoreThreshold && lives < 3 && canAddLife)
+        if (score >= nextLifeScoreCheckpoint)
         {
-            AddLives();
-            canAddLife = false;
+            nextLifeScoreCheckpoint += lifeScoreThreshold;
         }
 
-        if (score - lastLifeScoreCheckpoint < lifeScoreThreshold)
+        if (lives < 3 && score >= nextLifeScoreCheckpoint)
         {
-            canAddLife = true;
+            AddLives();
         }
 
         if (lives == 0 && allBombsDestroyed)
